@@ -3,4 +3,41 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.container{
+    background-color: cornflowerblue;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+    width: 600px;
+    height: auto;
+}
+.manager{
+    text-align: center;
+}
+.itemEnter{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 20px;
+    width: 330px;
+}
+.viewTypes{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 330px;
+}
+.list{
+    text-align: center;
+}
+.list ul{
+    display: inline-block;
+}
+.list li{
+    margin-bottom: 5px;
 }
