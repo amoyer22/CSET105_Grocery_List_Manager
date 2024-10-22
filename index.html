@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grocery List Manager</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="manager">
+                <h1>Grocery List Manager 📝</h1>
+                <div class="itemEnter">
+                    <label for="itemName">Item name:</label>
+                    <input type="text" id="input" autocomplete="off">
+                    <input type="submit" value="Submit" onclick="addItem()">
+                </div>
+                <div class="viewTypes">
+                    <button onClick="allView()" id="all">View all</button>
+                    <button onClick="purchasedView()" id="purchased">Purchased Items</button>
+                    <button onClick="unpurchasedView()" id="unpurchased">Unpurchased Items</button>
+                </div>
+            </div>
+
+            <div class="list">
+                <ul id="listSet">
+                </ul>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
