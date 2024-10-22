@@ -19,35 +19,45 @@ function addItem(){
 }
 
 function strikethrough(element){
-    if(element.style.textDecoration === "line-through"){
-        element.style.textDecoration = "none"
-    }
-    else{
-        element.style.textDecoration = "line-through"
-    }
+    let itemName = element.innerHTML
 
-    for(let object of items){
-        if(element.style.textDecoration === "line-through"){
-            object.purchased = true
+    for(let item of items){
+        if(item.name === itemName){
+            if(item.purchased){
+                element.style.textDecoration = "none"
+                item.purchased = false
+            }
+            else{
+                element.style.textDecoration = "line-through"
+                item.purchased = true
+            }
         }
+        break
     }
     console.log(items)
 }
 
 function purchasedView(){
-    if(items.purchased = true){
-        input.style.display === "block"
-    }
-    else{
-        input.style.display === "none"
+    document.getElementById("listSet").innerHTML = ''
+    for(let item of items){
+        if(item.purchased){
+            document.getElementById("listSet").appendChild(item.element)
+        }
     }
 }
 
 function unpurchasedView(){
-    if(items.purchased = false){
-        input.style.display === "block"
+    document.getElementById("listSet").innerHTML = ''
+    for(let item of items){
+        if(!item.purchased){
+            document.getElementById("listSet").appendChild(item.element)
+        }
     }
-    else{
-        input.style.display === "none"
+}
+
+function allView(){
+    document.getElementById("listSet").innerHTML = ''
+    for(let item of items){
+        document.getElementById("listSet").appendChild(item.element)
     }
 }
