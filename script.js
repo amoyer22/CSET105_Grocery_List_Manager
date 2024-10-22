@@ -33,3 +33,21 @@ function strikethrough(element){
     }
     console.log(items)
 }
+
+function purchasedView(){
+    if(items.purchased = true){
+        input.style.display === "block"
+    }
+    else{
+        input.style.display === "none"
+    }
+}
+
+function unpurchasedView(){
+    if(items.purchased = false){
+        input.style.display === "block"
+    }
+    else{
+        input.style.display === "none"
+    }
+}
