@@ -9,12 +9,18 @@
     outline: none;
 }
 
+body{
+    background-color: #8ec787;
+}
+
 .container{
-    background-color: cornflowerblue;
+    background-image: url("https://t4.ftcdn.net/jpg/04/12/54/77/360_F_412547765_ohTTmwiFDiy6SydjHK5XkXuUyLxzlByQ.jpg");
+    background-repeat: repeat-y;
+    box-shadow: 0px 0px 10px #737373;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 15px;
-    width: 600px;
+    width: 500px;
     height: auto;
 }
 .manager{
@@ -43,4 +49,8 @@
 }
 .list li{
     margin-bottom: 5px;
+}
+
+button, input[type=submit]{
+    padding: 5px;
 }
