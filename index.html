@@ -14,13 +14,13 @@
                 <h1>Grocery List Manager</h1>
                 <div class="itemEnter">
                     <label for="itemName">Item name:</label>
-                    <input type="text" id="input">
+                    <input type="text" id="input" autocomplete="off">
                     <input type="submit" value="Submit" onclick="addItem()">
                 </div>
                 <div class="viewTypes">
-                    <button>View all</button>
-                    <button>Purchased Items</button>
-                    <button>Unpurchased Items</button>
+                    <button onclick="allView()">View all</button>
+                    <button onclick="purchasedView()">Purchased Items</button>
+                    <button onclick="unpurchasedView()">Unpurchased Items</button>
                 </div>
             </div>
 
